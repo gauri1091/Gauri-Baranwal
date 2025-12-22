@@ -1,0 +1,40 @@
+.header{
+    display: block;
+    text-align: center;
+    background-color: grey;
+    padding: 12px;
+    border: 1px solid black;
+}
+
+.header span{
+    color: red;
+}
+
+.container {
+    width: 90%;
+    border: 2px solid #555;
+    padding: 10px;
+    display: grid;
+}
+
+.inline-nav a{
+    display: inline-block;
+    background: yellowgreen;
+    padding:8px 15px;
+    border: 1px solid #ccefcc;
+    margin: 5px;
+    text-decoration: none;
+    align-items: center;
+    font-weight: normal;
+}
+
+.block-nav a{
+    display: inline-block;
+    background: rgb(183, 231, 251);
+    padding:8px 15px;
+    border: 1px solid #ccefcc ;
+    margin: 5px;
+    text-decoration: none;
+    align-items: center;
+    font-weight: normal;
+}

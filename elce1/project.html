@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zepto</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f5f5;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: #5c2d91;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .hero {
+      background: linear-gradient(135deg, #7a3db8, #5c2d91);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: white;
+      color: #5c2d91;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .products {
+      padding: 40px;
+    }
+
+    .products h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .card button {
+      margin-top: 10px;
+      padding: 8px 20px;
+      background: #5c2d91;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <h1 class="logo">zepto</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Offers</a>
+      <a href="#">Profile</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Groceries delivered in 10 minutes</h2>
+    <p>Fresh fruits, vegetables & daily essentials</p>
+    <a href="categories.html"><button>Shop Now</button></a>
+  </section>
+
+  <!-- Products -->
+  <section class="products">
+    <h2>Popular Products</h2>
+    <div class="product-grid">
+      <div class="card">
+        <img src="https://i.ndtvimg.com/i/2017-10/apple-benefits_620x350_51507721694.jpg" alt="Apple">
+        <h3>Fresh Apples</h3>
+        <p>₹120 / kg</p>
+        <button>Add</button>
+      </div>
+
+      <div class="card">
+        <img src="https://fpsstore.in/cdn/shop/products/148715-2_2-amul-toned-milk.png?v=1641466845" alt="Milk">
+        <h3>Milk Packet</h3>
+        <p>₹55</p>
+        <button>Add</button>
+      </div>
+
+      <div class="card">
+        <img src="https://gharstuff.com/wp-content/uploads/2020/06/Bonn-Brown-Bread-400g.jpg" alt="Bread">
+        <h3>Brown Bread</h3>
+        <p>₹45</p>
+        <button>Add</button>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

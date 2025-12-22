@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories | Zepto</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f3f4f6;
+            color: #1f1f1f;
+        }
+        header {
+            background: white;
+            padding: 15px 10%;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .logo {
+            color: #5c2d91;
+            font-size: 24px;
+            font-weight: 900;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            color: #3c1885; 
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 20px;
+        }
+
+        .category-card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid transparent;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+        }
+
+        .icon-circle {
+            width: 80px;
+            height: 80px;
+            background: #f8f0ff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 12px;
+        }
+
+        .category-card img {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+        }
+
+        .category-card p {
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="project.html" class="logo">zepto</a>
+        <span style="color: black; font-size: 0.9rem;">| 10 min delivery</span>
+    </header>
+
+    <div class="container">
+        <h2>Explore Categories</h2>
+        
+        <div class="grid">
+            <a href="products.html" class="category-card">
+                <div class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/2329/2329865.png"></div>
+                <p>Fruits & Veggies</p>
+            </a>
+            <a href="products.html" class="category-card">
+                <div class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/3050/3050161.png"></div>
+                <p>Dairy & Bread</p>
+            </a>
+            <a href="products.html" class="category-card">
+                <div class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/2722/2722527.png"></div>
+                <p>Snacks & Munchies</p>
+            </a>
+
+            <a href="products.html" class="category-card">
+                <div class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/2405/2405479.png"></div>
+                <p>Cold Drinks & Juice</p>
+            </a>
+            <a href="products.html" class="category-card">
+                <div class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/3081/3081913.png"></div>
+                <p>Meat & Seafood</p>
+            </a>
+            <a href="products.html" class="category-card">
+                <div class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/924/924514.png"></div>
+                <p>Breakfast & Instant</p>
+            </a>
+
+            <a href="products.html" class="category-card">
+                <div class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/2553/2553691.png"></div>
+                <p>Kitchen Essentials</p>
+            </a>
+            <a href="products.html" class="category-card">
+                <div class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/3120/3120036.png"></div>
+                <p>Bath & Body</p>
+            </a>
+            <a href="products.html" class="category-card">
+                <div class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/3079/3079037.png"></div>
+                <p>Home & Cleaning</p>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
